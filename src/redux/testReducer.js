@@ -1,5 +1,5 @@
 const initialState = {
-    test: null,
+    test:'diu ',
 };
 
 const testReducer = (state = initialState, action) => {
