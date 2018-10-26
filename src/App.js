@@ -32,7 +32,7 @@ class App extends Component {
 
   render() {
     let myVariable = <h2>zihao</h2>;
-    let myBanner;
+    let myBanner='diuni';
     if (this.state.isOpen) {
       myBanner = <Header banner={this.state.banner}/>;
     }
@@ -49,6 +49,7 @@ class App extends Component {
             this.state.isOpen && 
             <Header banner={this.state.banner}/>
           }
+          {myBanner}
           <input value={this.state.banner} onChange={this.textHandler}/>
           <button  onClick={this.buttonHandler} >Click Me</button>
         </header>
